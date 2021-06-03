@@ -1,94 +1,709 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>正和商事</title>
-    <link rel="icon" href="assets/images/static/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/Main.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-</head>
-<body>
-   <header id="header__nav">
-    <div class="main__nav container">
-        <a class="nav__logo" href="./index.html"><img src="./assets/images/static/logo.png" alt="logo"></a>
-            <ul class="nav__list container">
-                <li class="nav__item">
-                    <a class="nav-link" href="./index.html">ホーム</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav-link" href="news.html">ニュース</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav-link dropdown" href="#">会社情報</a>
-                    <ul class="sub__navlist list1">
-                        <li>
-                            <a href="greeting.html">代表挨拶</a>
-                        </li>
-                        <li>
-                            <a href="company.html">会社概要</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav__item">
-                    <a class="nav-link dropdown" href="#">事業紹介</a>
-                    <ul class="sub__navlist list2">
-                            <li>
-                                <a href="housing.html#housing-1">キッチン</a>
-                            </li>
-                            <li>
-                                <a href="housing.html#housing-2">トイレ</a>
-                            </li>
-                            <li>
-                                <a href="housing.html#housing-3">バスルーム/洗面</a>
-                            </li>
-                            <li>
-                                <a href="exterior.html">エクステリア</a>
-                            </li>
-                            <li>
-                                <a href="tile.html">タイル/石材</a>
-                            </li>
-                            <li>
-                                <a href="index.html#opentab-6">内装/空調/水栓金具</a>
-                            </li>
-                    </ul>
-                </li>
-                <li class="nav__item">
-                    <a class="nav-link" href="works.html">施工実績</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav-link" href="recruit.html">採用情報</a>
-                </li>
+    <link
+      rel="icon"
+      href="assets/images/static/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/Main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header id="header__nav">
+      <div class="main__nav grid wide row">
+        <a class="nav__logo" href="./index.html"
+          ><img src="./assets/images/static/logo.png" alt="logo"
+        /></a>
+        <ul class="nav__list row">
+          <li class="nav__item">
+            <a class="nav-link" href="./index.html">ホーム</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link" href="news.html">ニュース</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link dropdown" href="#">会社情報</a>
+            <ul class="sub__navlist list1">
+              <li>
+                <a href="greeting.html">代表挨拶</a>
+              </li>
+              <li>
+                <a href="company.html">会社概要</a>
+              </li>
             </ul>
-    </div>
-   </header> 
-   <main>
-       <section id="slidermain">
-            <div class="slider-main">
-                <div class="slideitem" style="background-image: url(./assets/images/slider/slide01.jpg);"><a href="#"></a></div>
-                <div class="slideitem" style="background-image: url(./assets/images/slider/slide02.jpg);"><a href="#"></a></div>
-                <div class="slideitem" style="background-image: url(./assets/images/slider/slide03.jpg);"><a href="#"></a></div>
-                <div class="slideitem" style="background-image: url(./assets/images/slider/slide04.jpg);"><a href="#"></a></div>
-                <div class="slideitem" style="background-image: url(./assets/images/slider/slide05.jpg);"><a href="#"></a></div>
-                <!-- <div class="slideitem" data-bg="./assets/images/slider/slide01.jpg" data-link="#" style="background-image: url(&quot;./assets/images/slider/slide01.jpg&quot;);"><a href="#"></a></div>
-                <div class="slideitem" data-bg="./assets/images/slider/slide02.jpg" data-link="#" style="background-image: url(&quot;./assets/images/slider/slide02.jpg&quot;);"><a href="#"></a></div>
-                <div class="slideitem" data-bg="./assets/images/slider/slide03.jpg" data-link="#" style="background-image: url(&quot;./assets/images/slider/slide03.jpg&quot;);"><a href="#"></a></div>
-                <div class="slideitem" data-bg="./assets/images/slider/slide04.jpg" data-link="#" style="background-image: url(&quot;./assets/images/slider/slide04.jpg&quot;);"><a href="#"></a></div>
-                <div class="slideitem" data-bg="./assets/images/slider/slide05.jpg" data-link="#" style="background-image: url(&quot;./assets/images/slider/slide05.jpg&quot;);"><a href="#"></a></div> -->
-            </div>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link dropdown" href="#">事業紹介</a>
+            <ul class="sub__navlist list2">
+              <li>
+                <a href="housing.html#housing-1">キッチン</a>
+              </li>
+              <li>
+                <a href="housing.html#housing-2">トイレ</a>
+              </li>
+              <li>
+                <a href="housing.html#housing-3">バスルーム/洗面</a>
+              </li>
+              <li>
+                <a href="exterior.html">エクステリア</a>
+              </li>
+              <li>
+                <a href="tile.html">タイル/石材</a>
+              </li>
+              <li>
+                <a href="index.html#opentab-6">内装/空調/水栓金具</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link" href="works.html">施工実績</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link" href="recruit.html">採用情報</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section id="slidermain">
+        <div class="slider-main">
+          <div
+            class="slideitem"
+            style="background-image: url(./assets/images/slider/slide01.jpg)"
+          >
+            <a href="#"></a>
+          </div>
+          <div
+            class="slideitem"
+            style="background-image: url(./assets/images/slider/slide02.jpg)"
+          >
+            <a href="#"></a>
+          </div>
+          <div
+            class="slideitem"
+            style="background-image: url(./assets/images/slider/slide03.jpg)"
+          >
+            <a href="#"></a>
+          </div>
+          <div
+            class="slideitem"
+            style="background-image: url(./assets/images/slider/slide04.jpg)"
+          >
+            <a href="#"></a>
+          </div>
+          <div
+            class="slideitem"
+            style="background-image: url(./assets/images/slider/slide05.jpg)"
+          >
+            <a href="#"></a>
+          </div>
+        </div>
 
-            <div class="headerline">
-                <h2 class="title">これが欲しい！がきっと見つかる。</h2>
-                <h3 class="subtitle">施工までできる、建築資材商社。</h3>
-            </div>
+        <div class="headerline">
+          <h2 class="title">これが欲しい！がきっと見つかる。</h2>
+          <h3 class="subtitle">施工までできる、建築資材商社。</h3>
+        </div>
 
-            <div class="slider-button">
-                <a href="#"><img src="./assets/images/static/director_blog_ico.png" alt=""></a>
+        <div class="slider-button">
+          <a href="#"
+            ><img src="./assets/images/static/director_blog_ico.png" alt=""
+          /></a>
+        </div>
+      </section>
+      <!-- hot news -->
+      <section id="hotnews">
+        <div class="hot-news grid wide">
+          <div class="row">
+            <div class="book-header col l-2">
+              <h2 class="title-block">大切なお知らせ</h2>
             </div>
-        </section>
-   </main>
-   <footer></footer>
-</body>
+            <div class="col l-10">
+              <h2 class="title-block">大切なお知らせ</h2>
+              <div class="post-item hot-sticker">
+                <span class="date col">2021/06/01</span>
+                <span class="cate"
+                  ><a
+                    href="https://comotec.ne.jp/test_space/test/showashoji/cms/?cat=19"
+                    >お知らせ</a
+                  ></span
+                >
+                <span class="post-title"
+                  ><a
+                    href="https://comotec.ne.jp/test_space/test/showashoji/cms/?p=1623"
+                    >【6/1】HPをリニューアル致しました！</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- tab produce -->
+      <section id="tab-produce">
+        <div class="grid wide">
+          <div class="section__header row">
+            <div class="header__icon col l-1">
+              <img
+                src="./assets/images/static/icon_headline.png"
+                alt="header__icon"
+              />
+            </div>
+            <div class="header__text-box col l-11">
+              <div class="jp-subtile"></div>
+              <div class="jp-title">主要取扱商品</div>
+              <div class="en-title">Main Product</div>
+            </div>
+          </div>
+        </div>
+        <!-- tab brand -->
+        <div class="tab_brand grid wide">
+          <div class="tab_brand-list row no-gutters">
+            <div class="col l-2">
+              <a class="nav-link bgcl-1" href="#kitchen">
+                <span class="en-title">kitchen</span>
+                <span class="jp-title">キッチン</span>
+              </a>
+            </div>
+            <div class="col l-2">
+              <a class="nav-link bgcl-2" href="#toilet">
+                <span class="en-title">toilet</span>
+                <span class="jp-title">トイレ</span>
+              </a>
+            </div>
+            <div class="col l-2">
+              <a class="nav-link bgcl-3" href="#bath">
+                <span class="en-title">bath</span>
+                <span class="jp-title">バスルーム/<br />洗面</span>
+              </a>
+            </div>
+            <div class="col l-2">
+              <a class="nav-link bgcl-4" href="#exterior">
+                <span class="en-title">exterior</span>
+                <span class="jp-title">エクステリア</span>
+              </a>
+            </div>
+            <div class="col l-2">
+              <a class="nav-link bgcl-5" href="#tile">
+                <span class="en-title">tile</span>
+                <span class="jp-title">タイル/石材</span>
+              </a>
+            </div>
+            <div class="col l-2">
+              <a class="nav-link bgcl-6" href="#other">
+                <span class="en-title">other</span>
+                <span class="jp-title">内装/空調/<br />水栓金具</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- tab brand category -->
+        <div class="tab__brand--category grid wide border-cl1" id="kitchen">
+          <div class="category__header border-cl1">
+            <div class="jp-title">キッチン</div>
+            <div class="jp-subtitle">
+              衣食住の中心『食』を彩るキッチンを思いのままにプランニングします。
+            </div>
+          </div>
+          <div class="cate__heading--top">
+            <p>主要取り扱いメーカー</p>
+          </div>
+          <div class="brand__item row">
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo1.png" alt="logo1" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo2.png" alt="logo2" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo3.png" alt="logo3" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo4.png" alt="logo4" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo5.png" alt="logo5" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo1.png" alt="logo1" />
+            </div>
+          </div>
+          <!-- more button -->
+          <div class="brand__read-more-box row no-gutters">
+            <a href="#" class="btn col l-3"> 詳細はこちら </a>
+          </div>
+          <!-- end more-button -->
+          <div class="title-new-box row">
+            <p>News</p>
+          </div>
+        </div>
+        <!-- tab-2 -->
+        <div class="tab__brand--category grid wide border-cl2" id="toilet">
+          <div class="category__header border-cl2">
+            <div class="jp-title">キッチン</div>
+            <div class="jp-subtitle">
+              『レストルーム』=トイレ単体ではなく『空間』を作ります。
+            </div>
+          </div>
+          <div class="cate__heading--top">
+            <p>主要取り扱いメーカー</p>
+          </div>
+          <div class="brand__item row">
+            <div class="brand__item--icon col l-2 l-o-3">
+              <img src="/assets/images/brand/tab1_logo3.png" alt="logo3" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo4.png" alt="logo4" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo5.png" alt="logo5" />
+            </div>
+          </div>
+          <div class="brand__read-more-box row no-gutters">
+            <a href="#" class="btn col l-3"> 詳細はこちら </a>
+          </div>
+          <div class="title-new-box row">
+            <p>News</p>
+          </div>
+        </div>
+        <!-- tab-3 -->
+        <div class="tab__brand--category grid wide border-cl3" id="bath">
+          <div class="category__header border-cl3">
+            <div class="jp-title">バスルーム</div>
+            <div class="jp-subtitle">
+              一日の疲れを癒す至福の空間を創造します。
+            </div>
+          </div>
+          <div class="cate__heading--top">
+            <p>主要取り扱いメーカー</p>
+          </div>
+          <div class="brand__item row">
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo1.png" alt="logo1" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo2.png" alt="logo2" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo3.png" alt="logo3" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo4.png" alt="logo4" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo5.png" alt="logo5" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo1.png" alt="logo1" />
+            </div>
+          </div>
+          <div class="category__header border-cl3 no-title mt-20">
+            <div class="jp-title">洗面</div>
+          </div>
+          <div class="brand__item row">
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo1.png" alt="logo1" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo2.png" alt="logo2" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo3.png" alt="logo3" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo4.png" alt="logo4" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo5.png" alt="logo5" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo1.png" alt="logo1" />
+            </div>
+          </div>
+          <div class="category__header border-cl3 no-title mt-20">
+            <div class="jp-title">給湯</div>
+          </div>
+          <div class="brand__item row">
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo1.png" alt="logo1" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo2.png" alt="logo2" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo3.png" alt="logo3" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo4.png" alt="logo4" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo5.png" alt="logo5" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo1.png" alt="logo1" />
+            </div>
+          </div>
+          <div class="brand__read-more-box row no-gutters">
+            <a href="#" class="btn col l-3"> 詳細はこちら </a>
+          </div>
+          <div class="title-new-box row">
+            <p>News</p>
+          </div>
+        </div>
+        <!-- tab-4 -->
+        <div class="tab__brand--category grid wide border-cl4" id="exterior">
+          <div class="category__header border-cl4">
+            <div class="jp-title">エクステリア</div>
+            <div class="jp-subtitle">
+              ご自宅の『顔』。十人十色の顔作りをお手伝いします。
+            </div>
+          </div>
+          <div class="cate__heading--top">
+            <p>主要取り扱いメーカー</p>
+          </div>
+          <div class="brand__item row">
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo1.png" alt="logo1" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo2.png" alt="logo2" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo3.png" alt="logo3" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo4.png" alt="logo4" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo5.png" alt="logo5" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo1.png" alt="logo1" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo1.png" alt="logo1" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo2.png" alt="logo2" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo3.png" alt="logo3" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo4.png" alt="logo4" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo5.png" alt="logo5" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo1.png" alt="logo1" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo1.png" alt="logo1" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo2.png" alt="logo2" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo3.png" alt="logo3" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo4.png" alt="logo4" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo5.png" alt="logo5" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo1.png" alt="logo1" />
+            </div>
+          </div>
+          <div class="brand__read-more-box row no-gutters">
+            <a href="#" class="btn col l-3"> 詳細はこちら </a>
+          </div>
+          <div class="title-new-box row">
+            <p>News</p>
+          </div>
+        </div>
+        <!-- tab-5 -->
+        <div class="tab__brand--category grid wide border-cl5" id="tile">
+          <div class="category__header border-cl5">
+            <div class="jp-title">タイル/石材</div>
+            <div class="jp-subtitle">
+              家の外壁、玄関廻りだけでなく、家の中まで現在の『タイル』は機能性を持ち多種多様です。
+            </div>
+          </div>
+          <div class="cate__heading--top">
+            <p>主要取り扱いメーカー</p>
+          </div>
+          <div class="brand__item row">
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo1.png" alt="logo1" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo2.png" alt="logo2" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo3.png" alt="logo3" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo4.png" alt="logo4" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo5.png" alt="logo5" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo1.png" alt="logo1" />
+            </div>
+          </div>
+          <div class="brand__read-more-box row no-gutters">
+            <a href="#" class="btn col l-3"> 詳細はこちら </a>
+          </div>
+          <div class="title-new-box row">
+            <p>News</p>
+          </div>
+        </div>
+        <!-- tab-6 -->
+        <div class="tab__brand--category grid wide border-cl6" id="other">
+          <div class="cate__heading--right">
+            <p>主要取扱いメーカーを掲載しています。</p>
+          </div>
+          <div class="category__header border-cl6 no-title mt-20">
+            <div class="jp-title ib-block">空調</div>
+            <div class="jp-subtitle ib-block ml-30">
+              エアコン/ 空気清浄機/ 換気システム
+            </div>
+          </div>
+          <div class="brand__item row border-bottom">
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo1.png" alt="logo1" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo2.png" alt="logo2" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo3.png" alt="logo3" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo4.png" alt="logo4" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo5.png" alt="logo5" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo1.png" alt="logo1" />
+            </div>
+          </div>
+          <div class="category__header border-cl6 no-title mt-20">
+            <div class="jp-title ib-block">内装建材/インテリア</div>
+            <div class="jp-subtitle ib-block ml-30">
+              エアコン/ 空気清浄機/ 換気システム
+            </div>
+          </div>
+          <div class="brand__item row border-bottom">
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo1.png" alt="logo1" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo2.png" alt="logo2" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo3.png" alt="logo3" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo4.png" alt="logo4" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo5.png" alt="logo5" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo1.png" alt="logo1" />
+            </div>
+            <div class="brand__item--icon col l-2 l-o-3">
+              <img src="/assets/images/brand/tab1_logo4.png" alt="logo4" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo5.png" alt="logo5" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo1.png" alt="logo1" />
+            </div>
+          </div>
+          <div class="category__header border-cl6 no-title mt-20">
+            <div class="jp-title ib-block">水栓金具</div>
+            <div class="jp-subtitle ib-block ml-30">
+              水栓金具/ 浄水器/ ポンプ 他
+            </div>
+          </div>
+          <div class="brand__item row">
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo1.png" alt="logo1" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo2.png" alt="logo2" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo3.png" alt="logo3" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo4.png" alt="logo4" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo5.png" alt="logo5" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo1.png" alt="logo1" />
+            </div>
+            <div class="brand__item--icon col l-2 l-o-3">
+              <img src="/assets/images/brand/tab1_logo4.png" alt="logo4" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo5.png" alt="logo5" />
+            </div>
+            <div class="brand__item--icon col l-2">
+              <img src="/assets/images/brand/tab1_logo1.png" alt="logo1" />
+            </div>
+          </div>
+          <div class="title-new-box row">
+            <p>News</p>
+          </div>
+        </div>
+      </section>
+      <!-- company section -->
+      <section id="company">
+        <!-- header section -->
+        <div class="grid wide">
+          <div class="section__header row">
+            <div class="header__icon col l-1">
+              <img
+                src="./assets/images/static/icon_headline.png"
+                alt="header__icon"
+              />
+            </div>
+            <div class="header__text-box col l-11">
+              <div class="jp-subtile">しょうわしょうじ</div>
+              <div class="jp-title">正和商事とは</div>
+              <div class="en-title">COMPANY</div>
+            </div>
+          </div>
+        </div>
+        <!-- end header -->
+        <!-- container section -->
+        <div class="grid wide company__container">
+            <div class="row">
+                <div class="left-site col l-7 mt-40">
+                    <img class="" src="./assets/images/static/company_text.png" alt="company text">
+                </div>
+                <div class="right-site col l-5">
+                    <p>
+                                住まいづくりに関わる私たちの仕事は<br>
+                                夢のある仕事です。<br>
+                                100社以上あるいろんなメーカーの商品の中から、<br>
+                                現場やお客様のニーズに合った最適な商品を選び、<br>
+                                組み合わせ、ご提案致します。
+                            </p>
+                <a href="greeting.html" class="btn text-center border-cl1 mt-40">代表挨拶</a>
+                <a href="company.html" class="btn text-center border-cl1 mt-30">会社概要</a>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+      </section>
+      <!-- point section -->
+      <section id="point">
+        <!-- header section -->
+        <div class="grid wide">
+          <div class="section__header row mt-120">
+            <div class="header__icon col l-1">
+              <img
+                src="./assets/images/static/icon_headline.png"
+                alt="header__icon"
+              />
+            </div>
+            <div class="header__text-box col l-5">
+              <div class="jp-subtile">しょうわしょうじしょうわしょうじ</div>
+              <div class="jp-title">正和商事が選ばれる理由</div>
+              <div class="en-title">Point</div>
+            </div>
+            <div class="col l-6 fs-18 fw-bold">
+                <p>工務店様から一般施主様まで、</p>
+                <p>必要に応じて以下のどの段階でもお力になれます。</p>
+            </div>
+          </div>
+        </div>
+        <!-- end header -->
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-6">
+                    <img class="mt-40" src="./assets/images/static/point.png" alt="">
+                </div>
+                <div class="col l-6 ml--20">
+                <div class="point-list fw-bold">
+                            <div class="one-point point-1">
+                                <p class="point-head">相談</p>
+                                <p>住宅新築からリフォームまでプロ目線で寄り添ったお手伝い</p>
+                            </div>
+                            <div class="one-point point-2">
+                                <p class="point-head">現場調査</p>
+                                <p>施工箇所の確認</p>
+                            </div>
+                            <div class="one-point point-3">
+                                <p class="point-head">提案</p>
+                                <p>多メーカー・多商材の中から求められる商材をご提案</p>
+                            </div>
+                            <div class="one-point point-4">
+                                <p class="point-head">見積もり</p>
+                                <p>ご提案を実現する適正な価格でお見積もり</p>
+                            </div>
+                            <div class="one-point point-5">
+                                <p class="point-head">商品仕入れ</p>
+                                <p>自社仕入で納期が明確</p>
+                            </div>
+                            <div class="one-point point-6">
+                                <p class="point-head">自社配達</p>
+                                <p>自社配送を完備し、柔軟な時間調整でお届け可能</p>
+                            </div>
+                            <div class="one-point point-7">
+                                <p class="point-head">施工</p>
+                                <p>自社施工並びに信頼のおけるパートナーによる施工</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- section work -->
+      <section id="work"></section>
+        <!-- header section -->
+        <div class="grid wide">
+          <div class="section__header row mt-120">
+            <div class="header__icon col l-1">
+              <img
+                src="./assets/images/static/icon_headline.png"
+                alt="header__icon"
+              />
+            </div>
+            <div class="header__text-box col l-5">
+              <div class="jp-subtile"></div>
+              <div class="jp-title">施工実績</div>
+              <div class="en-title">Works</div>
+            </div>
+            <div class="col l-6 fs-18 fw-bold">
+                <p class="mt-55" >数ある施工実績の中から一部をご紹介致します。</p>
+            </div>
+          </div>
+        </div>
+        <!-- end header -->
+    </main>
+    <footer></footer>
+  </body>
 </html>
