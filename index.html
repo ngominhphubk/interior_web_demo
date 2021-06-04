@@ -977,6 +977,99 @@
         </div>
  </section>
     </main>
-    <footer></footer>
+    <footer>
+    <div class="footer">
+    <div class="footer__container grid wide">
+      <div class="row">
+        <div class="footer__item col l-4 first-col">
+          <a href="#" class="logo-white">
+            <img src="./assets/images/static/footer_logo.png" alt="">
+          </a>
+          <p class="mt-40">〒790-0001 松山市一番町3丁目3-5</p>
+          <h3><a href="tel:0899895582">TEL （089）989-5582（代）</a></h3>
+          <h3>FAX （089）989-5592</h3>
+        </div>
+
+        <div class="footer__item col l-1">
+          <div class="title-menu-box">
+                    ニュース
+                </div>
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="#">お知らせ</a></li>
+                </ul>
+        </div>
+
+        <div class="footer__item col l-2">
+          <div class="title-menu-box">
+                    事業紹介
+                </div>
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="housing.html#housing-1">キッチン</a></li>
+                    <li class="menu-item"><a href="housing.html#housing-2">トイレ</a></li>
+                    <li class="menu-item"><a href="housing.html#housing-3">バスルーム/洗面</a></li>
+                    <li class="menu-item"><a href="exterior.html">エクステリア</a></li>
+                    <li class="menu-item"><a href="tile.html">タイル/石材</a></li>
+                    <li class="menu-item"><a href="index.html#opentab-6">内装/空調/水栓金具</a></li>
+                </ul>
+        </div>
+
+        <div class="footer__item col l-2">
+         <div class="title-menu-box">
+                    会社情報
+                </div>
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="#">社長ブログ</a></li>
+                    <li class="menu-item"><a href="company.html">会社概要</a></li>
+                    <li class="menu-item"><a href="company.html#company-history">沿革</a></li>
+                    <li class="menu-item"><a href="company.html#company-sales-office">営業拠点</a></li>
+                </ul> 
+          </div>  
+
+          <div class="footer__item col l-2">
+            <div class="title-menu-box">
+                    <a href="works.html">施工実績</a>
+                </div>
+            <ul class="menu-list">
+                    <li class="menu-item"><a href="#">キッチン</a></li>
+                    <li class="menu-item"><a href="#">トイレ</a></li>
+                    <li class="menu-item"><a href="#">バスルーム/洗面</a></li>
+                    <li class="menu-item"><a href="#">エクステリア</a></li>
+                    <li class="menu-item"><a href="#">タイル/石材</a></li>
+                    <li class="menu-item"><a href="#">その他</a></li>
+                </ul>
+          </div>
+          <div class="footer__item col l-1">
+            <div class="title-menu-box">
+                    <a href="recruit.html">採用情報</a>
+                </div>
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="#">採用ブログ</a></li>
+                    <li class="menu-item"><a href="#">CSR活動</a></li>
+                </ul>
+          </div>
+      </div>
+      <div id="group" class="show"><a href="#"></a></div>
+    </div>
+
+    <p class="copyright">(c)2021 Showa Shoji Co,.Ltd.</p>
+    <script>
+//Get the button:
+var btn = $('#group');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+</script>
+    </div>
+    </footer>
   </body>
 </html>

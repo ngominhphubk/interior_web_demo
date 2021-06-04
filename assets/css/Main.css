@@ -49,6 +49,9 @@
 .ml-60 {
   margin-left: 60px;
 }
+.mb-40 {
+  margin-bottom: 40px !important;
+}
 .mb-120 {
   margin-bottom: 120px !important;
 }
@@ -687,4 +690,41 @@ section#recruit {
 .map__list--item .content p {
 font-size: 13px;
 letter-spacing: 1.5px;
+}
+/* footer section */
+.footer {
+  background: url(../../assets/images/static/footer_bg.jpg) no-repeat center;
+    color: #ffffff;
+    padding: 90px 0 45px;
+    background-size: cover;
+    width: 100%;
+    height: 417px;
+}
+.footer__container {
+  margin-top: 90px;
+  position: relative;
+}
+.footer__container .first-col {
+  border-right: 1px solid #fff;
+}
+.footer__item a {
+  color: white;
+}
+.footer__item .title-menu-box {
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+.copyright {
+  text-align: center;
+  font-size: 11px;
+  margin-top: 80px;
+}
+#group a {
+    width: 85px;
+    height: 85px;
+    display: block;
+    background-image: url(../../assets/images/static/go_up.png);
+    position: fixed;
+    right: 150px;
+    bottom: 50px;
 }
