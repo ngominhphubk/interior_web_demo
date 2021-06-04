@@ -95,7 +95,7 @@ a.btn {
     margin: auto;
     line-height: 63px;
     font-size: 18px;
-    background: url(/assets/images//static/btn_arrow_black.png) no-repeat;
+    background: url(../../assets/images//static/btn_arrow_black.png) no-repeat;
     background-position: calc(100% - 30px) 21px;
 }
 .dropdown {
@@ -416,7 +416,7 @@ color: #333333;
   height: 85px;
   color: #fff;
   display: block;
-  background-image: url(/assets/images/static/right-ar-white.png);
+  background-image: url(../../assets/images/static/right-ar-white.png);
     background-size: 28px 9px;
     background-position: right 25px bottom 20px;
     background-repeat: no-repeat;
@@ -649,7 +649,7 @@ margin-bottom: 25px;
 }
 section#recruit {
     padding: 10px 0 80px;
-    background-image: url(/assets/images/static/recruit.png);
+    background-image: url(../../assets/images/static/recruit.png);
     background-repeat: no-repeat;
     background-position: top 50px right 0px;
     margin-top: 200px;
