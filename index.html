@@ -10,9 +10,12 @@
       href="assets/images/static/favicon.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="./assets/css/grid.css" />
     <link rel="stylesheet" href="./assets/css/Main.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
       rel="stylesheet"
@@ -167,49 +170,68 @@
           </div>
         </div>
         <!-- tab brand -->
-        <div class="tab_brand grid wide">
-          <div class="tab_brand-list row no-gutters">
-            <div class="col l-2">
-              <a class="nav-link bgcl-1" href="#kitchen">
-                <span class="en-title">kitchen</span>
-                <span class="jp-title">キッチン</span>
-              </a>
-            </div>
-            <div class="col l-2">
-              <a class="nav-link bgcl-2" href="#toilet">
-                <span class="en-title">toilet</span>
-                <span class="jp-title">トイレ</span>
-              </a>
-            </div>
-            <div class="col l-2">
-              <a class="nav-link bgcl-3" href="#bath">
-                <span class="en-title">bath</span>
-                <span class="jp-title">バスルーム/<br />洗面</span>
-              </a>
-            </div>
-            <div class="col l-2">
-              <a class="nav-link bgcl-4" href="#exterior">
+        <div class="tab-brand-container">
+
+          <div class="tab_brand grid wide">
+            <div class="tab_brand-list row no-gutters">
+              <div class="col l-2">
+                <a class="tab_brand-nav-link bgcl-1 active" href="#kitchen">
+                  <span class="en-title">kitchen</span>
+                  <span class="jp-title">キッチン</span>
+                </a>
+              </div>
+              <div class="col l-2">
+                <a class="tab_brand-nav-link bgcl-2" href="#toilet">
+                  <span class="en-title">toilet</span>
+                  <span class="jp-title">トイレ</span>
+                </a>
+              </div>
+              <div class="col l-2">
+                <a class="tab_brand-nav-link bgcl-3" href="#bath">
+                  <span class="en-title">bath</span>
+                  <span class="jp-title">バスルーム/<br />洗面</span>
+                </a>
+              </div>
+              <div class="col l-2">
+              <a class="tab_brand-nav-link bgcl-4" href="#exterior">
                 <span class="en-title">exterior</span>
                 <span class="jp-title">エクステリア</span>
               </a>
             </div>
             <div class="col l-2">
-              <a class="nav-link bgcl-5" href="#tile">
+              <a class="tab_brand-nav-link bgcl-5" href="#tile">
                 <span class="en-title">tile</span>
                 <span class="jp-title">タイル/石材</span>
               </a>
             </div>
             <div class="col l-2">
-              <a class="nav-link bgcl-6" href="#other">
+              <a class="tab_brand-nav-link bgcl-6" href="#other">
                 <span class="en-title">other</span>
                 <span class="jp-title">内装/空調/<br />水栓金具</span>
               </a>
             </div>
           </div>
         </div>
-        <!-- tab brand category -->
-        <div class="tab__brand--category grid wide border-cl1" id="kitchen">
-          <div class="category__header border-cl1">
+        <script>
+          // Add active class to the current button (highlight it)
+           $(".tab_brand-list a").click(function (e) {
+            console.log('tab click')
+            e.preventDefault();
+            var tab_box = $(this).parent().parent().parent().parent();
+            var id = $(this).attr('href');
+
+            // Remove active
+            tab_box.find('.tab_brand-list a').removeClass('active');
+            tab_box.find('.tab__brand--category').removeClass('active');
+
+            // Add active
+            $(this).addClass('active');
+            tab_box.find(id).addClass('active');
+        });
+</script>
+<!-- tab brand category -->
+<div class="tab__brand--category active grid wide border-cl1" id="kitchen">
+  <div class="category__header border-cl1">
             <div class="jp-title">キッチン</div>
             <div class="jp-subtitle">
               衣食住の中心『食』を彩るキッチンを思いのままにプランニングします。
@@ -576,6 +598,7 @@
           <div class="title-new-box row">
             <p>News</p>
           </div>
+          </div>
         </div>
       </section>
       <!-- company section -->
@@ -703,6 +726,97 @@
           </div>
         </div>
         <!-- end header -->
+        <!-- work container  -->
+        <div class="work-slider-top">
+  <div class="work-item">
+   <div class="workcard">
+      <div class="news-item-grid style-2">
+         <div class="imgage-box"><a href="https://comotec.ne.jp/test_space/test/showashoji/cms/?works=%e3%80%90lifa%e9%a6%99%e9%87%8c%e3%80%91o%e6%a7%98%e9%82%b8%e3%80%80%e3%82%ad%e3%83%83%e3%83%81%e3%83%b3-%e3%83%aa%e3%83%93%e3%83%b3%e3%82%b0-%e5%92%8c%e5%ae%a4"><img src="https://comotec.ne.jp/test_space/test/showashoji/cms/wp-content/uploads/2021/05/6-324x216.jpg"></a>
+			 		  </div>
+         <div class="text-box">
+            <h3 class="title"><a href="https://comotec.ne.jp/test_space/test/showashoji/cms/?works=%e3%80%90lifa%e9%a6%99%e9%87%8c%e3%80%91o%e6%a7%98%e9%82%b8%e3%80%80%e3%82%ad%e3%83%83%e3%83%81%e3%83%b3-%e3%83%aa%e3%83%93%e3%83%b3%e3%82%b0-%e5%92%8c%e5%ae%a4">【LIFA香里】O様邸　キッチン/リビング/和室</a></h3>
+            <p class="description"></p>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="work-item">
+   <div class="workcard">
+      <div class="news-item-grid style-2">
+         <div class="imgage-box"><a href="https://comotec.ne.jp/test_space/test/showashoji/cms/?works=%e3%80%90lifa%e9%a6%99%e9%87%8c%e3%80%91%e4%bd%8f%e5%ae%85%e3%80%80%e7%8e%84%e9%96%a2%e5%9b%9e%e3%82%8a"><img src="https://comotec.ne.jp/test_space/test/showashoji/cms/wp-content/uploads/2021/05/3-1-324x216.jpg"></a>
+			 		  </div>
+         <div class="text-box">
+            <h3 class="title"><a href="https://comotec.ne.jp/test_space/test/showashoji/cms/?works=%e3%80%90lifa%e9%a6%99%e9%87%8c%e3%80%91%e4%bd%8f%e5%ae%85%e3%80%80%e7%8e%84%e9%96%a2%e5%9b%9e%e3%82%8a">【LIFA香里】O様邸　玄関回り</a></h3>
+            <p class="description"></p>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="work-item">
+   <div class="workcard">
+      <div class="news-item-grid style-2">
+         <div class="imgage-box"><a href="https://comotec.ne.jp/test_space/test/showashoji/cms/?works=%e6%ad%a3%e5%92%8c%e5%95%86%e4%ba%8b%e3%88%b1%e3%80%80%e6%96%b0%e7%a4%be%e5%b1%8b%e3%82%bf%e3%82%a4%e3%83%ab%e5%b7%a5%e4%ba%8b"><img src="https://comotec.ne.jp/test_space/test/showashoji/cms/wp-content/uploads/2021/05/IMG_0156-324x216.jpg"></a>
+			 			 <span class="cat"><a href="https://comotec.ne.jp/test_space/test/showashoji/cms/?business=tile&post_type=works">タイル</a></span>
+			 		  </div>
+         <div class="text-box">
+            <h3 class="title"><a href="https://comotec.ne.jp/test_space/test/showashoji/cms/?works=%e6%ad%a3%e5%92%8c%e5%95%86%e4%ba%8b%e3%88%b1%e3%80%80%e6%96%b0%e7%a4%be%e5%b1%8b%e3%82%bf%e3%82%a4%e3%83%ab%e5%b7%a5%e4%ba%8b">正和商事㈱　新社屋タイル工事</a></h3>
+            <p class="description"></p>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="work-item">
+   <div class="workcard">
+      <div class="news-item-grid style-2">
+         <div class="imgage-box"><a href="https://comotec.ne.jp/test_space/test/showashoji/cms/?works=%e6%ad%a3%e5%92%8c%e5%95%86%e4%ba%8b%e3%88%b1%e3%80%80%e6%96%b0%e7%a4%be%e5%b1%8b%e3%83%88%e3%82%a4%e3%83%ac%e5%b7%a5%e4%ba%8b"><img src="https://comotec.ne.jp/test_space/test/showashoji/cms/wp-content/uploads/2021/05/IMG_0082-324x216.jpg"></a>
+			 			 <span class="cat"><a href="https://comotec.ne.jp/test_space/test/showashoji/cms/?business=toilet&post_type=works">トイレ</a></span>
+			 		  </div>
+         <div class="text-box">
+            <h3 class="title"><a href="https://comotec.ne.jp/test_space/test/showashoji/cms/?works=%e6%ad%a3%e5%92%8c%e5%95%86%e4%ba%8b%e3%88%b1%e3%80%80%e6%96%b0%e7%a4%be%e5%b1%8b%e3%83%88%e3%82%a4%e3%83%ac%e5%b7%a5%e4%ba%8b">正和商事㈱　新社屋トイレ工事</a></h3>
+            <p class="description"></p>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="work-item">
+   <div class="workcard">
+      <div class="news-item-grid style-2">
+         <div class="imgage-box"><a href="https://comotec.ne.jp/test_space/test/showashoji/cms/?works=%e6%ad%a3%e5%92%8c%e5%95%86%e4%ba%8b%e3%88%b1%e3%80%80%e6%96%b0%e7%a4%be%e5%b1%8b%e3%83%95%e3%82%a7%e3%83%b3%e3%82%b9%e5%b7%a5%e4%ba%8b"><img src="https://comotec.ne.jp/test_space/test/showashoji/cms/wp-content/uploads/2021/05/IMG_0169-324x216.jpg"></a>
+			 			 <span class="cat"><a href="https://comotec.ne.jp/test_space/test/showashoji/cms/?business=exterior&post_type=works">エクステリア</a></span>
+			 		  </div>
+         <div class="text-box">
+            <h3 class="title"><a href="https://comotec.ne.jp/test_space/test/showashoji/cms/?works=%e6%ad%a3%e5%92%8c%e5%95%86%e4%ba%8b%e3%88%b1%e3%80%80%e6%96%b0%e7%a4%be%e5%b1%8b%e3%83%95%e3%82%a7%e3%83%b3%e3%82%b9%e5%b7%a5%e4%ba%8b">正和商事㈱　新社屋フェンス工事</a></h3>
+            <p class="description"></p>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="work-item">
+   <div class="workcard">
+      <div class="news-item-grid style-2">
+         <div class="imgage-box"><a href="https://comotec.ne.jp/test_space/test/showashoji/cms/?works=%ef%bd%8b%e6%a7%98%e9%82%b8%e5%a4%96%e6%a7%8b%e5%b7%a5%e4%ba%8b"><img src="https://comotec.ne.jp/test_space/test/showashoji/cms/wp-content/uploads/2021/05/KIMG0568兄貴外構正面-324x216.jpg"></a>
+			 			 <span class="cat"><a href="https://comotec.ne.jp/test_space/test/showashoji/cms/?business=exterior&post_type=works">エクステリア</a></span>
+			 		  </div>
+         <div class="text-box">
+            <h3 class="title"><a href="https://comotec.ne.jp/test_space/test/showashoji/cms/?works=%ef%bd%8b%e6%a7%98%e9%82%b8%e5%a4%96%e6%a7%8b%e5%b7%a5%e4%ba%8b">Ｋ様邸外構工事</a></h3>
+            <p class="description"></p>
+         </div>
+      </div>
+   </div>
+</div>
+ <!-- work container end  -->
+          </div>
+            <script>      
+                setTimeout(function () {   
+                    $('.work-slider-top').slick({
+                        infinite: true,
+                        speed: 300,
+                        slidesToShow: 1,
+                        centerMode: true,
+                        variableWidth: true
+                    });
+                }, 2000);       
+            </script>
       </section>
 <!-- topic section -->
 <section id="topic">
@@ -866,7 +980,9 @@
           </div>
         </div>
         <!-- end header -->
-        <div class="map-box mt-40"></div>
+        <div class="map-box mt-40">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124569.41467752503!2d107.95766609940138!3d12.661493987028024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3171f7d4216cd2fb%3A0x9f4a5ec2f999fb4!2zVHAuIEJ1w7RuIE1hIFRodeG7mXQsIMSQ4bqvayBM4bqvaywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1623045464713!5m2!1svi!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
         <!-- map list -->
         <div class="map__list grid wide mt-50 mb-120">
           <div class="row">
@@ -1049,26 +1165,26 @@
           </div>
       </div>
       <div id="group" class="show"><a href="#"></a></div>
+      <script>
+  //Get the button:
+  var btn = $('#group');
+  
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+  
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+  });
+  </script>
     </div>
 
     <p class="copyright">(c)2021 Showa Shoji Co,.Ltd.</p>
-    <script>
-//Get the button:
-var btn = $('#group');
-
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
-
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
-});
-</script>
     </div>
     </footer>
   </body>
