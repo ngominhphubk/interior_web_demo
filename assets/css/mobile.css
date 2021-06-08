@@ -141,4 +141,20 @@ margin-top: 340px !important;
 .footer__container .first-col {
     border: none;
 }
+button.slick-prev.slick-arrow {
+    left: 15px;
+}
+button.slick-next.slick-arrow {
+    right: 15px;
+}
+button.slick-prev.slick-arrow, button.slick-next.slick-arrow {
+    width: 48px;
+    height: 48px;
+    margin-top: 48px;
+}
+#group a {
+    width: 48px;
+    height: 48px;
+    background-size: cover;
+}
 }
