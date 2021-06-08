@@ -1,0 +1,144 @@
+@media only screen and (max-width:684px) {
+    .main__nav {
+    height: 45px;
+    border-radius: 22.5px;
+    padding-left: 20px;
+    padding-right: 24px;
+}
+.main__nav .nav__list {
+    display: none;
+}
+.nav__logo {
+    width: 166px;
+    height: 45px;
+    display: block;
+}
+.navbar-brand img {
+    width: 100%;
+    height: auto;
+}
+.hot-news h2 {
+    font-size: 18px !important;
+    margin: 23px auto 0px;
+}
+.post-item .date {
+    font-size: 12px;
+    font-weight: bold;
+    max-width: 150px;
+    flex: 0 0 150px;
+    text-align: center;
+}
+.post-item .cate {
+    max-width: 90px;
+    text-align: center;
+    border: 1px solid #008ece;
+    padding: 2px 0px;
+    height: 30px;
+    flex: 0 0 90px;
+}
+.post-item .post-title {
+    padding: 0 10px;
+    font-size: 12px;
+    position: relative;
+}
+/* slider main */
+.slider-main {
+    height: 310px;
+}
+.slider-button {
+    right: 20px;
+}
+.slider-button img {
+    width: 75px;
+    height: 75px;
+}
+/* header line */
+.headerline {
+top: 120px;
+}
+.headerline h2.title {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 4px;
+}
+.headerline h3.subtitle {
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+/* hot new */
+.hot-news h2.title-block {
+    max-width: 218px;
+    color: #e30000;
+    font-size: 12px;
+    margin-top: 16px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+.hot-news .post-item,
+.hot-new .post-item {
+    flex-wrap: wrap;
+}
+.post-item .date {
+    text-align: left;
+}
+.post-item .cate {
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+}
+.hot-sticker .post-title:after {
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    font-size: 9px;
+    right: -20px;
+    top: 0px
+}
+/* section header */
+.header__text-box .en-title {
+    font-size: 60px;
+    letter-spacing: 2px;
+    text-transform: none;
+    color: #ffffff00;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #f0eaea;
+    position: absolute;
+    bottom: 17px;
+    line-height: 50px;
+    z-index: -1;
+    font-weight: 200;
+    font-style: normal;
+}
+.header__text-box .jp-title {
+    color: black;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: bold;
+}
+/* point section */
+.point-list.fw-bold {
+    font-weight: normal;
+}
+.point-list .one-point p.point-head{
+    font-size: 18px;
+    line-height: 1;
+    opacity: 1;
+    font-weight: normal;
+}
+.point-list .one-point p {
+    font-weight: normal;
+    font-size: 12px;
+    opacity: 0.9;
+    line-height: 1.6;
+    font-weight: normal;
+}
+.company__container .right-site a {
+    margin: auto;
+}
+.recruit-content {
+margin-top: 340px !important;
+}
+.footer__container .first-col {
+    border: none;
+}
+}
